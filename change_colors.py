@@ -9,7 +9,7 @@ modes = [["-gs","greyscale_","Converts the image to greyscale"],
         ["-px","pixels_","Turns the image into pixels"]]
 
 for token in sys.argv[1:]:
-    if token == "-help" or token == "-h" or token == "-?":
+    if token == "-help":
         print("Change colors will read the arguments and can apply the following filters:")
         for m in modes:
             print("\t"+m[0]+"\t"+m[2])
